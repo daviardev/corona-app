@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+     <!--font awesome con CDN-->  
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
+
+                                                              <!--CSS de Bootstrap 5-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+                                                        <!--JS de Bootstrap 5-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="../html/ingreso.html">Bienvenido <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./envioAyuda.html">Envio de ayudas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../html/catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./contacto.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pqr.html">PQR</a>
+            </li>
+            <li class="nav-item">
+              <a href="./calculo.html" class="nav-link text-white">Ayuda monetaria</a>
+            </li>
+            <li class="nav-item">
+              <a href="../html/coronavirus.html" class="nav-link text-white">Reporte coronavirus</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#" onclick="cerrarSesion()" id="close">Cerrar sección</a>
+            </li>
+          </ul>
+          <span class="navbar-text text-white" id="info"></span>
+        </div>
+      </nav>
+
+    <title>PQR</title>
+</head>
+<body onload="nombre()">
+    <div class="container py-5">
+      <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12">
+            <center>
+              <img class="img-fluid" src="../img/PQR.jpg" width="400px" height="400px" alt="PQR">
+            </center>
+          </div>
+        </div>
+        <br>
+<section class="section pb-5">	
+  <div class="row">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12">
+      <div class="card border-primary">
+        <div class="card-body">
+          <div class="form-header blue accent-1">
+            <h1 class="text-center">Peticiones, quejas y reclamos</h1>
+            <h3> No te quedes callado:</h3>
+          </div>
+          <p>Nos sería de mucha ayuda. sí algun empleado de nuestra compañia tiene algún mal trato con nuestro cliente, avisenos y tomaremos acción sobre nuestros empleados</p>
+          <div class="md-form">
+            <div class="card-body">
+              <form class="form-group" id="miForm" action="{{url_for('pqrDatos')}}" method="POST">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                  </svg></span>
+                <input type="text" name="nombres" class="form-control" placeholder="Ingrese sus nombres:" id="nombres">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                  </svg></span>
+                <input type="text" name="apellidos" class="form-control" placeholder="Ingrese sus apellidos:" id="apellidos">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                  </svg></span>
+                <input type="email" name="correo" class="form-control" placeholder="Ingrese su correo:" id="correo">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                  </svg></span>
+                <input type="number" name="edad" class="form-control" placeholder="Ingrese su edad:" id="edad">
+                </div>
+                <select id="txtbarrio" name="txtbarrio" class="form-control form-select-lg mb-3" aria-label="form-select-lg example">
+                  <option selected>Seleccione el barrio donde vive</option>
+                  <option value="Carrizal">Carrizal</option>
+                  <option value="Ciudadela 20 de julio">Ciudadela 20 de julio</option>
+                  <option value="El santuario">El santuario</option>
+                  <option value="Las gardenias">Las gardenias</option>
+                  <option value="7 de Abril">7 de Abril</option>
+                  <option value="Otro barrio">Otro barrio</option>
+                </select>
+
+                <br>
+                <input type="date" name="txtfecha" class="form-control" id="txtfecha">
+                <br>
+                <select class="form-control form-select-lg mb-3" aria-label="form-select-lg example" name="txtproblema" id="txtproblema" required>
+                  <option selected >Seleccione algun problema</option>
+                  <option value="No llegó lo que se pidió">No llegó lo que se pidió</option>
+                  <option value="Retraso">Retraso</option>
+                  <option value="Mal trato con la persona">Mal trato con la persona</option>
+                  <option value="La pagina se congela">La pagina se congela</option>
+                  <option value="La página no me carga">La página no me carga</option>
+                  <option value="Otro problema">Otro problema</option>
+                </select>
+                <br>
+                <select class="form-control form-select-lg mb-3" aria-label="form-select-lg example" name="txtpla" id="txtpla" required>
+                  <option selected>¿Esta usted registrado en la plataforma?</option>
+                  <option>SI</option>
+                  <option >NO</option>
+                </select>
+                <br>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg></span>
+                  <textarea class="form-control" name="txtayuda" placeholder="¿En qué podemos ayudarlo?" id="txtayuda" required></textarea>
+                  
+                </div>
+                <br>
+                <input type="checkbox" id="txtacepto" value=" Acepto las condiciones del servicio" required> Acepto las condiciones del servicio, la declaracion de privacidad y la declaración de eso de cookies.
+                <br>
+
+            </div>
+
+            <center>
+              <button type="button" id="btnagregar" class="btn btn-primary" onclick="Procesar()" >Enviar</button>
+              <button class="btn btn-secondary" type="submit">Enviar API</button>
+              <button type="button" id="btneditar" class="btn btn-warning" onclick="actualizarfila()" >Editar</button>
+              <button type="button" class="btn btn-info" onclick="mostrar()">Mostrar tabla</button>
+              <button type="button" class="btn btn-danger" onclick="ocultar()">Ocultar Tabla</button>
+            </center> 
+          </form>
+
+          </div>
+              </div>
+          </div>
+       </div>
+      
+        
+       <br>
+       <div id="cuadro" style="display: none;" class="col-md-12 col-lg-12 col-sm-12 col-xl-12 table-responsive bg-white">
+    <br>
+        <table class="table table-hover table-dark" id="mitabla">
+            <tr>
+              <th>ID</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Correo</th>
+              <th>Edad</th>
+              <th>Barrio</th>
+              <th>Fecha</th>
+              <th>Problema</th>
+              <th>¿Registrado en la plataforma?</th>
+              <th>Queja</th>
+              <th>Opciones</th>
+            </tr>       
+       </table> 
+    </div>
+              
+        <br>
+             <p class="text-center col-lg-12">Página propiedad de @RAFAEL, @ALBERTO, @JERSON, cuidamos de usted.</p>
+
+</body>
+ 
+
+<script src="../js/pqr.js"></script>
+<script src="../js/proceso.js"></script>
+<script src="../js/validar.js"></script>
+
+</html>

@@ -1,0 +1,35 @@
+Usuarios = [
+     {
+        "usuario": "admin",
+        "contrasena": "Admin",
+        "Nombre": "Jerson",
+        "Apellido": "Silva",
+        "Cargo": "Administrador",
+        "telefono":3003683126,
+        "identificacion": 1045759468,
+        "edad": 22,
+        "Correo": "jdsilva@itsa.edu.co"
+    },
+    {
+        "usuario": "rafa",
+        "contrasena": "Rafa123",
+        "Nombre": "Rafael",
+        "Apellido": "Ballestas",
+        "Cargo": "Encargado",
+        "telefono": 3003652483,
+        "identificacion": 102436845,
+        "edad": 21,
+        "Correo": "raballestas@itsa.edu.co"
+    },
+    {
+        "usuario": "albert",
+        "contrasena": "Albert123",
+        "Nombre": "Alberto",
+        "Apellido": "Almanza",
+        "Cargo": "Repartidor",
+        "telefono": 3017279085,
+        "identificacion": 1056326513,
+        "edad": 18,
+        "Correo": "amalmanza@itsa.edu.co"
+    }
+]

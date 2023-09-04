@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <script src="../js/proceso.js"></script>
+        <script src="../js/validar.js"></script>
+        <script src="../js/jquery-3.1.1.min.js"></script>
+        <script>
+          $('.carousel').carousel();
+        </script>
+
+
+                                                              <!--CSS de Bootstrap 5-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+                                                        <!--JS de Bootstrap 5-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+     <!---------------------------------------------------------------------------------------------------->
+                                                      <!--Menú de navegación-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="./ingreso.html">Bienvenido <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/envioAyuda.html">Envio de ayudas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/contacto.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/pqr.html">PQR</a>
+            </li>
+            <li class="nav-item">
+              <a href="../templates/calculo.html" class="nav-link text-white">Ayuda monetaria</a>
+            </li>
+            <li class="nav-item">
+              <a href="./coronavirus.html" class="nav-link text-white">Reporte coronavirus</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#" onclick="cerrarSesion()" id="close">Cerrar sección</a>
+            </li>
+          </ul>
+          <span class="navbar-text text-white" id="info"></span>
+        </div>
+      </nav>
+</head>
+<body class="bg-white" onload="nombre()">
+<div class="container py-5">
+<div class="row">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12">
+            
+            <h1 class="text-center">Los 5 Barrios más afectados debido a la pandemia</h1><br><br>
+            
+          <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://thumbs4.properati.com/7/C8KnZouKiqpBSwHkIAcxIQg89U8=/trim/fit-in/0x0/smart/filters:strip_icc()/https://properati-s3-co.s3-us-west-2.amazonaws.com/temp-developments-editor-2d4deeec-0e20-4f1c-90aa-c8431b5a836f-barranquilla-carrizal-hero.png" class="img-fluid" width="1200px" height="450px">
+                <div class="carousel-caption d-nome d-md-block bg-white">
+                  <h5 class="text-dark">Carrizal</h5>
+                  <p class="text-dark">Conformado por 179 manzanas, abarca un área urbana entre la carrera 8 y carrera 4 y las calles 52c y 45, con 30.035 habitantes.</p>
+                </div>
+              </div>
+                <div class="carousel-item">
+                  <img src="https://primeronoticias.com.co/wp-content/uploads/2017/05/vias-7-de-abril-800x450.jpg" class="img-fluid" width="1200px" height="450px">
+                  <div class="carousel-caption d-nome d-md-block bg-white">
+                    <h5 class="text-dark">7 de Abril</h5>
+                    <p class="text-dark">Zona ubicada entre Kr 6 al norte y Dg 83 al sur, Cl 90 y 51B al oriente y M. Galapa al occidente, actualmente cuenta con un total de 68 contagiado por lo que esta dentro de los barrios con mas contagios</p>
+                  </div>
+                </div>
+               <div class="carousel-item">
+                <img src="https://primeronoticias.com.co/wp-content/uploads/2017/10/Barrio-Ciudadela-20-de-Julio-estrena-cinco-v%C3%ADas-pavimentadas-800x450.jpg" class="img-fluid" width="1200px" height="450px">
+                <div class="carousel-caption d-nome d-md-block bg-white">
+                  <h5 class="text-dark">Ciudadela 20 de Julio</h5>
+                  <p class="text-dark">Zona ubicada entre Kr 8 al norte y Kr 13D al sur, Ac Murillo al oriente y Cl 51B al occidente. Estuvo por muchos meses con la lupa puesta debido a que era el barrio del sur con mas indice de contagios mas grandes.</p>
+                </div>
+               </div> 
+               <div class="carousel-item">
+                <img src="https://www.elheraldo.co/sites/default/files/styles/860x484/public/articulo/2021/05/10/5a-calles_nota_abajo.jpeg?itok=TPE1wsOX" class="img-fluid" width="1200px" height="450px">
+                <div class="carousel-caption d-nome d-md-block bg-white">
+                  <h5 class="text-dark">El santuario</h5>
+                  <p class="text-dark"> Zona ubicada entre Kr 8 al norte y Kr 13D al sur, Ac Murillo al oriente y Cl 51B al occidente. Es uno de los barrios populares de la ciudad de Barranquilla y cuenta actualmente con una tasa aproximada de 53 contagiados.</p>   
+                </div>
+               </div>
+               <div class="carousel-item">
+                <img src="https://www.elheraldo.co/sites/default/files/styles/width_860/public/articulo/2015/06/23/las_gardenias_giovanny_18_0.jpg?itok=EIPCUS1c" class="img-fluid" width="1200px" height="450px">
+                <div class="carousel-caption d-nome d-md-block bg-white">
+                  <h5 class="text-dark">Las gardenias</h5>
+                  <p class="text-dark"> Cl. 98c #1e - 38. Conocido como uno de los barrios mas peligrosos de la ciudad, este tambien a sido atacada por el covid 19 debido al caso omiso que hacen sus habitrantes. La cifra de contagios de este barrio redondea los 47.</p>
+                </div>
+               </div>
+            </div>
+            <!--Controles Slider-->
+            <a href="#carousel1" role="button" data-slide="prev" class="carousel-control-prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Prev</span>
+
+            <a href="#carousel1" role="button" data-slide="next" class="carousel-control-next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+            <ol class="carousel-indicators">
+              <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel1" data-slide-to="1"></li>
+              <li data-target="#carousel1" data-slide-to="2"></li>
+              <li data-target="#carousel1" data-slide-to="3"></li>
+              <li data-target="#carousel1" data-slide-to="4"></li>
+            </ol>
+
+          </div>
+        <br><br>
+    <div class="foster">
+        <p class="text-center">Página propiedad de @RAFAEL, @ALBERTO, @JERSON, cuidamos de usted.</p>             
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

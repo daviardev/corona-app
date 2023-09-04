@@ -1,0 +1,2 @@
+Dinero destinado para alimentos: 32 Dinero destinado para medicinas: 12Dinero destinado para alimentos: 12 Dinero destinado para medicinas: 321
+Dinero destinado para alimentos: 12 Dinero destinado para medicinas: 32

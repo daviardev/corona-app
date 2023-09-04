@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/proceso.js"></script> <!--Script de proceso-->
+    <script src="../js/validar.js"></script> <!--Script de validación-->
+    
+
+   
+
+                                                        <!--CSS de Bootstrap 5-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+                                                        <!--JS de Bootstrap 5-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <title>Ingresar</title>
+
+                                                        <!--Menú de navegación-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary toast" aria-live="assertive" aria-atomic="true" role="alert">
+        <a class="navbar-brand text-white">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="ingreso.html">Bienvenido <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/envioAyuda.html">Envio de ayudas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/contacto.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/pqr.html">PQR</a>
+            </li>
+            <li class="nav-item">
+              <a href="../templates/calculo.html" class="nav-link text-white">Ayuda monetaria</a>
+            </li>
+            <li class="nav-item">
+              <a href="./coronavirus.html" class="nav-link text-white">Reporte coronavirus</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#" onclick="cerrarSesion()" id="close">Cerrar sección</a>
+            </li>
+          </ul>
+          <span class="navbar-text text-white" id="info"></span>
+        </div>
+      </nav>
+</head>
+<body onload="nombre()" class="bg-white"> <!--Cargando la función para el nombre y apellido de la cuenta-->
+
+  <div class="container py-5">
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12"> 
+		      <div class="col-md-12 text-center mb-5">
+			   </div>
+       <div class="row">
+       <div class="col-md-6 mx-auto">
+       <div class="card rounded-0 border-primary">
+       <div class="card-header">
+         <p class="text-center text-primary">
+          Estamos diseñados para colaborarle en estos tiempos de pandemia del Covid 19
+         </p>
+      
+
+  <!------------------------------------------------------------------------------------------------------>
+</div>
+  <div class="card-body">
+                   <!--Dentro del form, estamos pidiendo el usuario y la contraseña-->
+        <center><img src="../img/187cf8272755130197bacc8df6267c61.png" class="img-fluid aling-center" alt="cuidate" height="200px" width="200px"></center>
+    <br>
+    <div class="fooster text-center"><p class="">!Juntos podemos ganarle al CoronaVirus!</p>
+    <p class="text-center">¿Necesitas una ayuda alimenticia o de protección contra el virus?<a href="../templates/envioAyuda.html"><b> <br> Click Aquí</b></a></div>
+        <br>
+    <p class="text-center">¿No sabes lo que es el Covid-19?<a href="" data-toggle="modal" data-target="#exampleModal"> Click aquí!!</a>
+    </p>
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Video explicativo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <iframe width="450px" height="315px" src="https://www.youtube.com/embed/vlzxSleRnmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+        <div>
+  <p class="text-center">Página propiedad de @RAFAEL, @ALBERTO, @JERSON, cuidamos de usted.</p>
+
+</div>    
+    </form>
+</body>
+</html>

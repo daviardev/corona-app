@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Estamos importando el css de bootstrap junto al js de bootstrap y el js de las funciones-->
+
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/registroloca.js"></script>
+
+
+  <!---------------------------------------------------------------------------------------------------->
+
+  <title>iniciar seccion</title>
+</head>
+<body class="bg-white"> <!--El cuerpo tiene como color de información de bootstrap-->
+
+ <!--Sus respectivos mc y mb para hacer el sitio responsive-->
+
+  <div class="container py-5">
+    <div class="row">
+        <div class="col-md-12"> 
+		      <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12 text-center mb-5">
+			   </div>
+       <div class="row">
+       <div class="col-md-6 mx-auto">
+       <div class="card rounded-0 border-primary">
+       <div class="card-header">
+           <p class="text-center text-primary">
+            Sistema de registro para la prevención y ayuda contra
+            el Covid-19
+           </p>
+       <h3 class="mb-0 text-primary text-center">Registrate</h3>
+
+  <!------------------------------------------------------------------------------------------------------>
+</div>
+  <div class="card-body">
+                   <!--Dentro del form, estamos pidiendo el usuario y la contraseña-->
+        <form class="form" id="miForm">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg rounded-0" id="txtusuario" placeholder="Usuario:" required>
+               </div>
+               <div class="form-group">
+                <br>
+                  <input type="text" class="form-control form-control-lg rounded-0" id="txtnombre" placeholder="Nombres:" required>
+            </div>
+            <div class="form-group">
+                <br>
+                  <input type="text" class="form-control form-control-lg rounded-0" id="txtapellido" placeholder="Apellidos:" required>
+            </div>
+      <div class="form-group">
+            <br>
+              <input type="text" class="form-control form-control-lg rounded-0" id="txtid" placeholder="N° indentificación:" required>
+        </div>
+        <div class="form-group">
+            <br>
+                 <input type="text" class="form-control form-control-lg rounded-0" id="txttelefono" placeholder="N° de telefono:" required>
+                   </div>
+                   <div class="form-group">
+                    <br>
+                        <input type="number" class="form-control form-control-lg rounded-0" id="txtedad" placeholder="Edad:" required>
+                           </div>
+                           <div class="form-group">
+                            <br>
+                             <input type="password" class="form-control form-control-lg rounded-0" id="txtcontraseña" placeholder="Contraseña:" required>
+                    </div>       
+         <div><br>
+      <center><button type="button" onclick="regi()" class="btn btn-primary btn-lg float-right">Enviar</button></center>
+    <br>
+    <div class="fooster"><p class="text-center">Al registrar, aceptas nuestras Condiciones de uso y Politica de privacidad</p>
+    <p class="text-center">¿Ya tienes cuenta? <a href="../index.html" id="fooster"><b>Iniciar sección</b></a></div>
+        <br>
+        <div class="foster">
+  <p class="text-center">Página propiedad de @RAFAEL, @ALBERTO, @JERSON, cuidamos de usted.</p>
+
+</div>    
+    </form>
+  <!------------------------------------------------------------------------------------------------------------------------------->
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

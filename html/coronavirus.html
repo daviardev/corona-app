@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/covid.css">
+    <script src="../js/proceso.js"></script>
+    <script src="../js/validar.js"></script>
+    <script src="../js/jquery.js"></script>
+
+                     
+
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+                                                              <!--CSS de Bootstrap 5-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+                                                        <!--JS de Bootstrap 5-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ <!---------------------------------------------------------------------------------------------------->
+                                                      <!--Menú de navegación-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white">Menú</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="./ingreso.html">Bienvenido <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/envioAyuda.html">Envio de ayudas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/contacto.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../templates/pqr.html">PQR</a>
+            </li>
+            <li class="nav-item">
+              <a href="../templates/calculo.html" class="nav-link text-white">Ayuda monetaria</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/coronavirus.html" class="nav-link text-white">Reporte coronavirus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="#" onclick="cerrarSesion()" id="close">Cerrar sección</a>
+            </li>
+          </ul>
+          <span class="navbar-text text-white" id="info"></span>
+        </div>
+      </nav>
+
+    <title>Casos de coronavirus</title>
+</head>
+<body onload="nombre()" class="bg-white">
+    <div class="container py-5">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xl-12 bg-white">
+
+          <h2 class="text-center">Casos de coronavirus en <span id="country"></span> <img  class="img-fluid" id="flag"></h2><br><br>
+
+        <div class="board">
+        <div class="card a"><i class="fa fa-tachometer"></i><h5>Casos activos</h5><span id="active"></span></div>
+        <div class="card ca"><i class="fa fa-th-list"></i><h5>Casos totales</h5><span id="cases"></span></div><br><br>
+        <div class="card cr"><i class="fa fa-times-circle"></i><h5>Casos criticos</h5><span id="critical"></span></div>
+        <div class="card d"><i class="fa fa-times"></i><h5>Muertes totales</h5><span id="death"></span></div><br><br>
+        <div class="card r"><i class="fa fa-check-square-o"></i><h5>Total recuperados</h5><span id="recovered"></span></div>
+        <div class="card t"><i class="fa fa-eye"></i><h5>Total de pruebas</h5><span id="tests"></span></div>
+      </div>
+          </div>
+          </div>
+        </div>
+</body>
+</html>
